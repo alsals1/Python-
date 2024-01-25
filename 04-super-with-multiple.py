@@ -14,9 +14,14 @@ class ParentB:
         print(f'Value from ParentB: {self.value_b}')
 
 
-class Child:
-    pass
+class Child(ParentA, ParentB):
+    def __init__(self):
+        super().__init__()          # MRO 순서대로 super 는 ParentA
+        self.value_c = 'Child'
+        
+    def show_value(self):
+        print(f'Value from Child: {self.value_c}')
 
 
 child = Child()
-child.show_value()
+child.show_value()      # 자기자신의 것
