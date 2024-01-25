@@ -22,3 +22,10 @@ class D(B, C):
 
 
 obj = D()
+
+# super 순서 찾기 
+print(D.mro()) # D B C A
+# 역순으로 출력
+
+
+# mro() 메서드

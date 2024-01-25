@@ -1,4 +1,5 @@
 class Person:
+    
     def __init__(self, name):           # 생성자 함수
         self.name = name
 
@@ -40,7 +41,7 @@ print(baby1.swim()) # 첫째가 수영
 print(baby1.walk()) # 아빠가 걷기
 
 # Mom의 메서드(겹침) > 내꺼
-print(baby1.swim()) # 아빠가 걷기
+print(baby1.swim()) # 첫째가 수영
 
 print(baby1.gene) # XY 
 '''
